@@ -1,0 +1,25 @@
+{
+  "version": 2,
+  "name": "Caleta Lenta",
+  "request": "Build an original sample website in the style of a small liveaboard directory: a few boats, itineraries, departure dates and prices, plus an inquiry form. Spanish interface, English form labels for a HubSpot demo. No payments, no copied brand, photos or text. This is a fictional operator, not a real business.",
+  "target": {
+    "kind": "none"
+  },
+  "stack": "Static HTML, CSS and JavaScript",
+  "status": "ready",
+  "note": "Sample content written by hand. Craft Anything did not run Study → Build → Check: no coding agent is signed in on this machine, so a rebuild cannot start.",
+  "created_ms": 1793570400000,
+  "updated_ms": 1793570400000,
+  "last_reply": "Caleta Lenta is a fictional three-boat directory. Open app/index.html. The inquiry form keeps the submission in the browser and does not take payment.",
+  "checks": [
+    {
+      "round": 0,
+      "note": "Not compared with a live site. The target is a description only, so there is no likeness score.",
+      "at_ms": 1793570400000,
+      "passed": null,
+      "similarity": null
+    }
+  ],
+  "asset_budget_usd": 5.0,
+  "generate_assets": false
+}
