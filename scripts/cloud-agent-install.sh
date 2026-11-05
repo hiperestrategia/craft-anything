@@ -56,7 +56,14 @@ fi
 
 stamp_dir="/usr/local/share/craft-anything"
 stamp_file="${stamp_dir}/cli.stamp"
-src_stamp="$(git rev-parse HEAD 2>/dev/null || echo nogit)"
+# Hash the Rust sources, not the git commit, so a demo or docs commit does not
+# force another compile. A change under apps/, crates/ or the lockfile does.
+src_stamp="$(
+  git ls-files -z -- apps crates Cargo.toml Cargo.lock \
+    | xargs -0 sha256sum \
+    | sha256sum \
+    | awk '{print $1}'
+)"
 installed_stamp=""
 if [ -f "${stamp_file}" ]; then
   installed_stamp="$(cat "${stamp_file}")"
