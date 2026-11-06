@@ -1,12 +1,10 @@
 # Caleta Lenta
 
-Original sample for a HubSpot conversation: a fictional liveaboard directory with three boats, three itineraries, departure dates, prices and an inquiry form. It is not a real operator, and it does not take payment.
+A fictional liveaboard directory for a HubSpot conversation: boats, trips, departure dates, prices and an inquiry form. It is not a real operator, and it does not take payment.
 
-Craft Anything keeps a project as `craft.json` plus an `app/` folder (normally under `Documents/Craft Anything`). This copy lives in the repository so it can be reviewed and reused:
+Craft Anything produced this copy. Clean-room study of a public booking site (visitor view only), then a rebuild with OpenRouter model `deepseek/deepseek-v4-pro`. The project record is `craft.json`. The pages are in `app/`. Screenshots and other captures of the original site are not in this folder.
 
-`demos/caleta-lenta/`
-
-The engine did not generate it. A rebuild needs a coding agent signed in on the machine (`craft-anything-cli doctor` names what is missing). Nothing here was taken from a live booking site.
+The check scored the home page about 34% like the original on layout and about 2% like it on text. Headings, boat names and trip descriptions are invented. The wordmark is the words "CALETA LENTA" in a system font, not a copied logo. There are no photographs.
 
 ## Open the demo
 
@@ -18,4 +16,4 @@ python3 -m http.server 8765 --bind 127.0.0.1
 
 Then open http://127.0.0.1:8765/app/
 
-The inquiry form uses English field names (`firstname`, `lastname`, `email`, `phone`, and so on) so a later HubSpot form can map them. Submitting it only shows a confirmation in the browser.
+The inquiry form uses English field names (`firstname`, `lastname`, `email`, `phone`, `message`) so a HubSpot form can map them. Submitting it only shows a confirmation in the browser.

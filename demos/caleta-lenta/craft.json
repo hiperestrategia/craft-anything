@@ -1,25 +1,28 @@
 {
   "version": 2,
   "name": "Caleta Lenta",
-  "request": "Build an original sample website in the style of a small liveaboard directory: a few boats, itineraries, departure dates and prices, plus an inquiry form. Spanish interface, English form labels for a HubSpot demo. No payments, no copied brand, photos or text. This is a fictional operator, not a real business.",
+  "request": "Build an original HubSpot demo in plain HTML and CSS: a fictional liveaboard directory with a few boats, itineraries, departure dates and prices, and an inquiry form. Study the public site as a visitor would, then invent your own operator, boats, copy and layout. Use a Spanish interface. Keep the form field names in English (firstname, lastname, email, phone, message) so a HubSpot form can map them. Do not copy logos, photos, brand names or verbatim text from the site. No payments. Submitting the form only confirms in the browser.",
   "target": {
-    "kind": "none"
+    "kind": "website",
+    "url": "https://liveaboard.com"
   },
-  "stack": "Static HTML, CSS and JavaScript",
+  "stack": "Plain HTML and CSS",
   "status": "ready",
-  "note": "Sample content written by hand. Craft Anything did not run Study → Build → Check: no coding agent is signed in on this machine, so a rebuild cannot start.",
-  "created_ms": 1793570400000,
-  "updated_ms": 1793570400000,
-  "last_reply": "Caleta Lenta is a fictional three-boat directory. Open app/index.html. The inquiry form keeps the submission in the browser and does not take payment.",
+  "note": "Clean-room rebuild. OpenRouter model deepseek/deepseek-v4-pro wrote app/ after deepseek/deepseek-v4.1-flash studied the page and stopped before writing. Visual likeness about 34%. Text likeness about 2%. No original logos, photos or verbatim lines are in app/.",
+  "created_ms": 1793986453644,
+  "updated_ms": 1793988948757,
+  "last_reply": "Four static pages for the fictional operator Caleta Lenta: home, boats, trips and an inquiry form. The form confirms in the browser and does not send data or take payment.",
   "checks": [
     {
-      "round": 0,
-      "note": "Not compared with a live site. The target is a description only, so there is no likeness score.",
-      "at_ms": 1793570400000,
-      "passed": null,
-      "similarity": null
+      "round": 2,
+      "check": "web-visual",
+      "passed": true,
+      "similarity": 33.87,
+      "note": "Home page about 34% alike on layout and about 2% alike on text. Spanish menu labels, so the original English control names did not match. One tablet width still scrolls sideways.",
+      "at_ms": 1793988948755
     }
   ],
   "asset_budget_usd": 5.0,
-  "generate_assets": false
+  "generate_assets": false,
+  "builder": "openrouter"
 }
