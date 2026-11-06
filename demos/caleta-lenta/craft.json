@@ -1,0 +1,28 @@
+{
+  "version": 2,
+  "name": "Caleta Lenta",
+  "request": "Build an original HubSpot demo in plain HTML and CSS: a fictional liveaboard directory with a few boats, itineraries, departure dates and prices, and an inquiry form. Study the public site as a visitor would, then invent your own operator, boats, copy and layout. Use a Spanish interface. Keep the form field names in English (firstname, lastname, email, phone, message) so a HubSpot form can map them. Do not copy logos, photos, brand names or verbatim text from the site. No payments. Submitting the form only confirms in the browser.",
+  "target": {
+    "kind": "website",
+    "url": "https://liveaboard.com"
+  },
+  "stack": "Plain HTML and CSS",
+  "status": "ready",
+  "note": "Clean-room rebuild. OpenRouter model deepseek/deepseek-v4-pro wrote app/ after deepseek/deepseek-v4.1-flash studied the page and stopped before writing. Visual likeness about 34%. Text likeness about 2%. No original logos, photos or verbatim lines are in app/.",
+  "created_ms": 1793986453644,
+  "updated_ms": 1793988948757,
+  "last_reply": "Four static pages for the fictional operator Caleta Lenta: home, boats, trips and an inquiry form. The form confirms in the browser and does not send data or take payment.",
+  "checks": [
+    {
+      "round": 2,
+      "check": "web-visual",
+      "passed": true,
+      "similarity": 33.87,
+      "note": "Home page about 34% alike on layout and about 2% alike on text. Spanish menu labels, so the original English control names did not match. One tablet width still scrolls sideways.",
+      "at_ms": 1793988948755
+    }
+  ],
+  "asset_budget_usd": 5.0,
+  "generate_assets": false,
+  "builder": "openrouter"
+}

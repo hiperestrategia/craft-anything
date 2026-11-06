@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contacto — Caleta Lenta</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="header" id="header">
+  <div class="header__inner">
+    <a href="index.html" class="header__logo" aria-label="Caleta Lenta — Inicio">
+      <svg class="header__logo-svg" viewBox="0 0 206 30" width="206" height="30" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <text x="0" y="23" font-family="ui-sans-serif, system-ui, sans-serif" font-weight="700" font-size="22" fill="#374151">CALETA</text>
+        <text x="103" y="23" font-family="ui-sans-serif, system-ui, sans-serif" font-weight="400" font-size="22" fill="#007c89">LENTA</text>
+      </svg>
+    </a>
+    <nav class="header__nav">
+      <a href="index.html" class="header__nav-btn">INICIO</a>
+      <a href="boats.html" class="header__nav-btn">BARCOS</a>
+      <a href="trips.html" class="header__nav-btn">VIAJES</a>
+      <a href="inquiry.html" class="header__nav-btn" style="color:#007c89">CONTACTO</a>
+    </nav>
+    <button class="header__hamburger" id="hamburger" aria-label="Abrir menú">
+      <span class="header__hamburger-bar"></span>
+      <span class="header__hamburger-bar"></span>
+      <span class="header__hamburger-bar"></span>
+    </button>
+  </div>
+</header>
+
+<main>
+  <section class="page-section section--white">
+    <div class="page-section__inner">
+      <h1 class="page-heading">Solicita información</h1>
+      <p class="page-subheading">Cuéntanos qué viaje te interesa y un asesor te responderá en menos de 24 horas.</p>
+
+      <form class="inquiry-form" id="inquiry-form" novalidate>
+        <div class="inquiry-form__field">
+          <label class="inquiry-form__label" for="firstname">Nombre *</label>
+          <input class="inquiry-form__input" type="text" id="firstname" name="firstname" required autocomplete="given-name" placeholder="Tu nombre">
+        </div>
+        <div class="inquiry-form__field">
+          <label class="inquiry-form__label" for="lastname">Apellidos *</label>
+          <input class="inquiry-form__input" type="text" id="lastname" name="lastname" required autocomplete="family-name" placeholder="Tus apellidos">
+        </div>
+        <div class="inquiry-form__field">
+          <label class="inquiry-form__label" for="email">Correo electrónico *</label>
+          <input class="inquiry-form__input" type="email" id="email" name="email" required autocomplete="email" placeholder="tucorreo@ejemplo.com">
+        </div>
+        <div class="inquiry-form__field">
+          <label class="inquiry-form__label" for="phone">Teléfono</label>
+          <input class="inquiry-form__input" type="tel" id="phone" name="phone" autocomplete="tel" placeholder="+34 600 000 000">
+        </div>
+        <div class="inquiry-form__field">
+          <label class="inquiry-form__label" for="message">Mensaje *</label>
+          <textarea class="inquiry-form__textarea" id="message" name="message" required placeholder="Cuéntanos qué viaje te interesa, cuántos sois y las fechas aproximadas."></textarea>
+        </div>
+        <button class="inquiry-form__submit" type="submit">Enviar consulta</button>
+      </form>
+
+      <div class="inquiry-form inquiry-form__confirm" id="inquiry-confirm">
+        <h3>¡Consulta enviada!</h3>
+        <p>Gracias por escribirnos. Un asesor de Caleta Lenta te responderá en menos de 24 horas.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__badges">
+      <div class="footer__badge">⭐ 4.8 / 5</div>
+      <div class="footer__badge">🔒 Pago Seguro</div>
+      <div class="footer__badge">🌍 12 Países</div>
+      <div class="footer__badge">🏆 Mejor Precio</div>
+      <div class="footer__badge">📞 24/7</div>
+    </div>
+    <div class="footer__cols">
+      <div class="footer__col">
+        <label class="footer__select-label" for="footer-lang">Idioma</label>
+        <select class="footer__select" id="footer-lang">
+          <option>Español</option><option>English</option><option>Français</option><option>Deutsch</option>
+        </select>
+        <label class="footer__select-label" for="footer-currency">Moneda</label>
+        <select class="footer__select" id="footer-currency">
+          <option>EUR</option><option>USD</option><option>GBP</option><option>MXN</option>
+        </select>
+      </div>
+      <div class="footer__col">
+        <h4 class="footer__col-title">Tipos de viaje</h4>
+        <a href="trips.html" class="footer__link">Buceo</a>
+        <a href="trips.html" class="footer__link">Aventura</a>
+        <a href="trips.html" class="footer__link">Fluvial</a>
+      </div>
+      <div class="footer__col">
+        <h4 class="footer__col-title">Explora</h4>
+        <a href="boats.html" class="footer__link">Barcos</a>
+        <a href="trips.html" class="footer__link">Destinos</a>
+        <a href="trips.html" class="footer__link">Salidas</a>
+      </div>
+      <div class="footer__col">
+        <h4 class="footer__col-title">Caleta Lenta</h4>
+        <a href="inquiry.html" class="footer__link">Contacto</a>
+        <a href="inquiry.html" class="footer__link">Atención al cliente</a>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <a href="#" class="footer__legal">Política de Privacidad</a>
+      <a href="#" class="footer__legal">Términos de Uso</a>
+    </div>
+  </div>
+</footer>
+
+<div class="mobile-menu" id="mobile-menu">
+  <div class="mobile-menu__backdrop"></div>
+  <div class="mobile-menu__panel">
+    <button class="mobile-menu__close" id="mobile-close">&times;</button>
+    <nav class="mobile-menu__nav">
+      <a href="index.html" class="mobile-menu__link">Inicio</a>
+      <a href="boats.html" class="mobile-menu__link">Barcos</a>
+      <a href="trips.html" class="mobile-menu__link">Viajes</a>
+      <a href="inquiry.html" class="mobile-menu__link">Contacto</a>
+    </nav>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Caleta Lenta — Cruceros de Buceo y Aventura</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="header__inner">
+    <a href="index.html" class="header__logo" aria-label="Caleta Lenta — Inicio">
+      <svg class="header__logo-svg" viewBox="0 0 206 30" width="206" height="30"><text x="0" y="23" font-family="ui-sans-serif, system-ui, sans-serif" font-weight="700" font-size="22" fill="#374151">CALETA</text><text x="103" y="23" font-family="ui-sans-serif, system-ui, sans-serif" font-weight="400" font-size="22" fill="#007c89">LENTA</text></svg>
+    </a>
+    <nav class="header__nav">
+      <div class="header__dd">
+        <button class="header__nav-btn header__dd-btn" data-dd="destinos">DESTINOS <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#374151" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></button>
+        <div class="header__dd-panel" id="dd-destinos">
+          <div class="dd-grid">
+            <div class="dd-col">
+              <h4 class="dd-title">Cruceros de Buceo</h4>
+              <a href="trips.html" class="dd-link">Mar Rojo</a>
+              <a href="trips.html" class="dd-link">Islas Galápagos</a>
+              <a href="trips.html" class="dd-link">Maldivas</a>
+              <a href="trips.html" class="dd-link">Raja Ampat</a>
+              <a href="trips.html" class="dd-link">Tailandia</a>
+              <a href="trips.html" class="dd-link">Filipinas</a>
+              <a href="trips.html" class="dd-link">Gran Barrera de Coral</a>
+              <a href="trips.html" class="dd-link">Caribe</a>
+            </div>
+            <div class="dd-col">
+              <h4 class="dd-title">Cruceros de Aventura</h4>
+              <a href="trips.html" class="dd-link">Galápagos</a>
+              <a href="trips.html" class="dd-link">Antártida</a>
+              <a href="trips.html" class="dd-link">Croacia</a>
+              <a href="trips.html" class="dd-link">Alaska</a>
+              <a href="trips.html" class="dd-link">Grecia</a>
+              <a href="trips.html" class="dd-link">Ártico</a>
+              <a href="trips.html" class="dd-link">Noruega</a>
+              <a href="trips.html" class="dd-link">Australia</a>
+            </div>
+            <div class="dd-col">
+              <h4 class="dd-title">Cruceros Fluviales</h4>
+              <a href="trips.html" class="dd-link">Danubio</a>
+              <a href="trips.html" class="dd-link">Nilo</a>
+              <a href="trips.html" class="dd-link">Amazonas</a>
+              <a href="trips.html" class="dd-link">Rin</a>
+              <a href="trips.html" class="dd-link">Mekong</a>
+              <a href="trips.html" class="dd-link">Sena</a>
+              <a href="trips.html" class="dd-link">Duero</a>
+              <a href="trips.html" class="dd-link">Mississippi</a>
+            </div>
+            <div class="dd-col dd-col--help">
+              <h4 class="dd-title">¿Necesitas ayuda?</h4>
+              <a href="inquiry.html" class="dd-link dd-link--cta">Contáctanos</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header__dd">
+        <button class="header__nav-btn header__dd-btn" data-dd="idioma">IDIOMA <span class="header__flag">🇪🇸</span></button>
+        <div class="header__dd-panel header__dd-panel--sm" id="dd-idioma">
+          <a href="#" class="dd-link dd-link--item">Español</a>
+          <a href="#" class="dd-link dd-link--item">English</a>
+          <a href="#" class="dd-link dd-link--item">Français</a>
+          <a href="#" class="dd-link dd-link--item">Deutsch</a>
+          <a href="#" class="dd-link dd-link--item">Italiano</a>
+        </div>
+      </div>
+      <div class="header__dd">
+        <button class="header__nav-btn header__dd-btn" data-dd="moneda">EUR</button>
+        <div class="header__dd-panel header__dd-panel--sm" id="dd-moneda">
+          <a href="#" class="dd-link dd-link--item">EUR — Euro</a>
+          <a href="#" class="dd-link dd-link--item">USD — Dólar</a>
+          <a href="#" class="dd-link dd-link--item">GBP — Libra</a>
+          <a href="#" class="dd-link dd-link--item">MXN — Peso mexicano</a>
+          <a href="#" class="dd-link dd-link--item">COP — Peso colombiano</a>
+        </div>
+      </div>
+      <div class="header__dd">
+        <button class="header__nav-btn header__dd-btn" data-dd="soporte">SOPORTE 24/7</button>
+        <div class="header__dd-panel header__dd-panel--sm" id="dd-soporte">
+          <a href="tel:+34900123456" class="dd-link dd-link--item">+34 900 123 456</a>
+          <a href="inquiry.html" class="dd-link dd-link--item">Enviar un mensaje</a>
+          <a href="#" class="dd-link dd-link--item">Quiénes somos</a>
+        </div>
+      </div>
+      <button class="header__nav-btn">VISTO RECIENTE</button>
+      <button class="header__nav-btn">FAVORITOS <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#374151" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></button>
+      <button class="header__nav-btn">MI CUENTA <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#374151" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></button>
+    </nav>
+    <button class="header__hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false">
+      <span class="header__hamburger-bar"></span>
+      <span class="header__hamburger-bar"></span>
+      <span class="header__hamburger-bar"></span>
+    </button>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="hero__bg"></div>
+    <div class="hero__content">
+      <h1 class="hero__title">¡Bienvenido a Bordo!</h1>
+      <p class="hero__subtitle">Compara y reserva cruceros de buceo, aventura y fluviales fácilmente</p>
+      <div class="hero__search">
+        <button class="hero__dd-btn hero__dd-btn--left" id="hero-dest-btn">
+          Selecciona un destino
+          <svg width="8" height="10" viewBox="0 0 8 10"><path d="M1 3L4 6L7 3" stroke="#374151" stroke-width="1.5" fill="none"/></svg>
+        </button>
+        <div class="hero__dd-panel" id="hero-dest-menu">
+          <a href="trips.html" class="hero__dd-link">Mar Rojo</a>
+          <a href="trips.html" class="hero__dd-link">Maldivas</a>
+          <a href="trips.html" class="hero__dd-link">Galápagos</a>
+          <a href="trips.html" class="hero__dd-link">Raja Ampat</a>
+          <a href="trips.html" class="hero__dd-link">Tailandia</a>
+          <a href="trips.html" class="hero__dd-link">Caribe</a>
+        </div>
+        <button class="hero__dd-btn hero__dd-btn--right" id="hero-date-btn">
+          Próximas salidas
+          <svg width="8" height="10" viewBox="0 0 8 10"><path d="M1 3L4 6L7 3" stroke="#374151" stroke-width="1.5" fill="none"/></svg>
+        </button>
+        <div class="hero__dd-panel" id="hero-date-menu" style="left:280px;">
+          <a href="trips.html" class="hero__dd-link">Enero 2027</a>
+          <a href="trips.html" class="hero__dd-link">Febrero 2027</a>
+          <a href="trips.html" class="hero__dd-link">Marzo 2027</a>
+          <a href="trips.html" class="hero__dd-link">Abril 2027</a>
+          <a href="trips.html" class="hero__dd-link">Mayo 2027</a>
+          <a href="trips.html" class="hero__dd-link">Junio 2027</a>
+        </div>
+        <a href="trips.html" class="hero__search-btn">BUSCAR</a>
+      </div>
+      <ul class="hero__bullets">
+        <li class="hero__bullet">
+          <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="23" stroke="white" stroke-width="2.5"/><path d="M22 16v16M16 24h16" stroke="white" stroke-width="2.5" stroke-linecap="round"/></svg>
+          <span>100 % mejores precios</span>
+        </li>
+        <li class="hero__bullet">
+          <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="23" stroke="white" stroke-width="2.5"/><path d="M16 24l6 6 10-12" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span>Reserva segura y sin sorpresas</span>
+        </li>
+        <li class="hero__bullet">
+          <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="23" stroke="white" stroke-width="2.5"/><path d="M18 20a6 6 0 1112 0c0 8-6 14-6 14s-6-6-6-14z" stroke="white" stroke-width="2.5"/><circle cx="24" cy="20" r="2.5" fill="white"/></svg>
+          <span>Expertos a tu lado, 24/7</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section section--white">
+    <div class="section__inner">
+      <h2 class="section__heading section__heading--left">Tipos de viaje</h2>
+      <div class="card-row">
+        <a href="trips.html" class="card">
+          <div class="card__img card__img--diving"><span class="card__label">BUCEO</span></div>
+          <div class="card__body">
+            <h3 class="card__title">Cruceros de Buceo</h3>
+            <p class="card__count">324 viajes disponibles</p>
+            <p class="card__desc">Explora los arrecifes más vibrantes del planeta desde la cubierta de un barco equipado para el buceo.</p>
+            <span class="card__link">Ver cruceros →</span>
+          </div>
+        </a>
+        <a href="trips.html" class="card">
+          <div class="card__img card__img--adventure"><span class="card__label">AVENTURA</span></div>
+          <div class="card__body">
+            <h3 class="card__title">Cruceros de Aventura</h3>
+            <p class="card__count">218 viajes disponibles</p>
+            <p class="card__desc">Navega por fiordos, islas remotas y costas salvajes en barcos pequeños con guías expertos.</p>
+            <span class="card__link">Ver cruceros →</span>
+          </div>
+        </a>
+        <a href="trips.html" class="card">
+          <div class="card__img card__img--river"><span class="card__label">FLUVIAL</span></div>
+          <div class="card__body">
+            <h3 class="card__title">Cruceros Fluviales</h3>
+            <p class="card__count">156 viajes disponibles</p>
+            <p class="card__desc">Descubre ciudades históricas y paisajes desde los ríos más emblemáticos del mundo.</p>
+            <span class="card__link">Ver cruceros →</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--help">
+    <div class="section__inner section__inner--narrow">
+      <h2 class="section__heading">Estamos aquí para ayudarte, 24/7</h2>
+      <p class="section__subtitle">Conecta con nuestros asesores expertos para planificar tu próxima aventura.</p>
+      <div class="avatars">
+        <div class="avatar" style="background:#007c89;">M</div>
+        <div class="avatar" style="background:#729c07;">L</div>
+        <div class="avatar" style="background:#0065b8;">C</div>
+        <div class="avatar" style="background:#7c3aed;">A</div>
+        <div class="avatar" style="background:#dc2626;">P</div>
+        <div class="avatar" style="background:#0891b2;">R</div>
+        <div class="avatar" style="background:#d97706;">S</div>
+        <div class="avatar" style="background:#4f46e5;">E</div>
+      </div>
+      <div class="help-links">
+        <div class="help-link">
+          <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><rect x="8" y="10" width="32" height="28" rx="4" stroke="#374151" stroke-width="2"/><path d="M16 18h16M16 24h16M16 30h10" stroke="#374151" stroke-width="2" stroke-linecap="round"/></svg>
+          <a href="tel:+34900123456" class="help-link__text">+34 900 123 456</a>
+        </div>
+        <div class="help-link">
+          <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><rect x="8" y="10" width="32" height="28" rx="4" stroke="#374151" stroke-width="2"/><path d="M8 14l16 12 16-12" stroke="#374151" stroke-width="2"/></svg>
+          <button class="help-link__text help-link__text--btn">Enviar un mensaje</button>
+        </div>
+        <div class="help-link">
+          <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="16" stroke="#374151" stroke-width="2"/><path d="M24 16v8l6 4" stroke="#374151" stroke-width="2" stroke-linecap="round"/></svg>
+          <a href="#" class="help-link__text">Quiénes somos</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--white">
+    <div class="section__inner section__inner--narrow">
+      <h2 class="section__heading">Reservar un crucero es fácil</h2>
+      <p class="section__subtitle">12 países, 38 barcos, 698 viajes y 3.421 opiniones verificadas.</p>
+      <div class="two-col">
+        <div class="two-col__col">
+          <p>Hay muchas aventuras por vivir a bordo de un barco. Un crucero de buceo, de expedición o fluvial es justo eso: experiencias inolvidables en algunos de los lugares más remotos y bellos del planeta. Navegar de noche y despertar en un destino nuevo cada mañana es la forma más intensa de viajar.</p>
+          <p>Embárcate en un crucero de expedición para un viaje íntimo entre maravillas naturales. Con acceso a zonas que los grandes cruceros no pueden alcanzar, nuestros barcos pequeños te llevan al corazón de la naturaleza.</p>
+        </div>
+        <div class="two-col__col">
+          <p>Navega por los ríos más emblemáticos del mundo, donde cada recodo revela ciudades antiguas, selvas exuberantes y culturas milenarias. Desde los castillos del Rin hasta los templos del Nilo, cada día trae una nueva perspectiva.</p>
+          <p>Únete a un crucero de buceo para disfrutar del mejor submarinismo. Despierta con el océano a tus pies, sumérgete en aguas cristalinas y explora arrecifes llenos de vida. Nuestros barcos están equipados con todo lo necesario para que solo pienses en bucear.</p>
+        </div>
+      </div>
+      <a href="#" class="section__cta">Quiénes somos →</a>
+    </div>
+  </section>
+
+  <section class="section section--reviews">
+    <div class="section__inner section__inner--narrow reviews-wrap">
+      <h2 class="section__heading">Miles de clientes satisfechos</h2>
+      <p class="section__subtitle">Mira lo que dicen de nosotros quienes ya han viajado con Caleta Lenta.</p>
+      <div class="reviews-scroll" id="reviews-scroll">
+        <div class="review">
+          <div class="review__stars">★★★★★</div>
+          <p class="review__quote">«Muy fácil, respuestas rápidas a cualquier duda, precios justos y una atención excelente.»</p>
+          <a href="boats.html" class="review__boat">Calma Azul →</a>
+        </div>
+        <div class="review">
+          <div class="review__stars">★★★★★</div>
+          <p class="review__quote">«Todo salió a la perfección y el servicio de atención al cliente es magnífico.»</p>
+          <a href="boats.html" class="review__boat">Arena Negra →</a>
+        </div>
+        <div class="review">
+          <div class="review__stars">★★★★★</div>
+          <p class="review__quote">«Súper, todo fue sobre ruedas y el equipo de soporte respondió en minutos.»</p>
+          <a href="boats.html" class="review__boat">Isla Perdida →</a>
+        </div>
+        <div class="review">
+          <div class="review__stars">★★★★★</div>
+          <p class="review__quote">«Reservar fue sencillísimo y las recomendaciones del equipo fueron de gran ayuda.»</p>
+          <a href="boats.html" class="review__boat">Viento Sur →</a>
+        </div>
+        <div class="review">
+          <div class="review__stars">★★★★★</div>
+          <p class="review__quote">«La mejor experiencia de buceo que he tenido. El barco, impecable. El equipo, de primera.»</p>
+          <a href="boats.html" class="review__boat">Calma Azul →</a>
+        </div>
+        <div class="review">
+          <div class="review__stars">★★★★★</div>
+          <p class="review__quote">«Comunicación muy clara y transparente. Volveré a reservar con ellos sin duda.»</p>
+          <a href="boats.html" class="review__boat">Arena Negra →</a>
+        </div>
+      </div>
+      <button class="review-arrow" id="review-next" aria-label="Siguiente opinión">
+        <svg width="40" height="40" viewBox="0 0 40 40" fill="none"><path d="M16 10l10 10-10 10" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <div class="section__cta-wrap">
+        <a href="#" class="section__cta">Ver más opiniones →</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__cols">
+      <div class="footer__col">
+        <label class="footer__select-label" for="footer-lang">Idioma</label>
+        <select class="footer__select" id="footer-lang">
+          <option>Español</option><option>English</option><option>Français</option><option>Deutsch</option><option>Italiano</option>
+        </select>
+        <label class="footer__select-label" for="footer-currency">Moneda</label>
+        <select class="footer__select" id="footer-currency">
+          <option>EUR</option><option>USD</option><option>GBP</option><option>MXN</option><option>COP</option>
+        </select>
+      </div>
+      <div class="footer__col">
+        <h4 class="footer__col-title">Tipos de viaje</h4>
+        <a href="trips.html" class="footer__link">Cruceros de Buceo</a>
+        <a href="trips.html" class="footer__link">Cruceros de Aventura</a>
+        <a href="trips.html" class="footer__link">Cruceros Fluviales</a>
+      </div>
+      <div class="footer__col">
+        <h4 class="footer__col-title">Explora</h4>
+        <a href="boats.html" class="footer__link">Todos los barcos</a>
+        <a href="trips.html" class="footer__link">Todos los destinos</a>
+        <a href="trips.html" class="footer__link">Próximas salidas</a>
+        <a href="trips.html" class="footer__link">Todos los ríos</a>
+      </div>
+      <div class="footer__col">
+        <h4 class="footer__col-title">Caleta Lenta</h4>
+        <a href="#" class="footer__link">Quiénes somos</a>
+        <a href="inquiry.html" class="footer__link">Atención al cliente</a>
+        <a href="inquiry.html" class="footer__link">Contacto</a>
+        <a href="inquiry.html" class="footer__link">Trabaja con nosotros</a>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <a href="#" class="footer__legal">Política de Privacidad</a>
+      <a href="#" class="footer__legal">Términos de Uso</a>
+    </div>
+  </div>
+</footer>
+
+<div class="mobile-menu" id="mobile-menu">
+  <div class="mobile-menu__backdrop"></div>
+  <div class="mobile-menu__panel">
+    <button class="mobile-menu__close" id="mobile-close" aria-label="Cerrar menú">&times;</button>
+    <nav class="mobile-menu__nav">
+      <a href="boats.html" class="mobile-menu__link">Ver barcos</a>
+      <a href="trips.html" class="mobile-menu__link">Ver viajes</a>
+      <a href="inquiry.html" class="mobile-menu__link">Contacto</a>
+      <hr class="mobile-menu__sep">
+      <a href="#" class="mobile-menu__link">Destinos</a>
+      <a href="#" class="mobile-menu__link">Idioma: Español</a>
+      <a href="#" class="mobile-menu__link">Moneda: EUR</a>
+      <a href="#" class="mobile-menu__link">Soporte 24/7</a>
+      <a href="#" class="mobile-menu__link">Favoritos</a>
+      <a href="#" class="mobile-menu__link">Mi cuenta</a>
+    </nav>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
